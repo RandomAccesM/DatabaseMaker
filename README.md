@@ -21,8 +21,12 @@ This complex plugin lets you create some databases, in game GUI, and use the Buk
   * max <int Nb_of_max_items> : puts a limit for the database length. (Numbers of items). If you put 0, the database will not have a limit.
   * autoload <true/false> : Will the database automatically load with the plugin ? (Default value : "false")
   * save : Saves the database and the config. If you created a database without setting up values, type of values and max, you will not be   able to save the database, and the database will be deleted if the servers reloads the plugin (Server reboot included).
+  * customcommand : Set up the custom command label of your database.
 * /dbm load <database> : When you create and save a database, you need to load it. If the autoload value is false, you need to load your database when the server starts or reloads.
 * /dbm unload <database> : Unload a database. (WARN : You will not be able to use your database).
+
+### Custom commands :
+Please note that you can use a database without using : '''/dbm <database> <item>'''. You can use custom commands, with custom permissions. Using the database throught /dbm requires the databasemaker.<database>.see . Using a custom command will print a new permission : <database>.access
 
 ## Permissions :
 * databasemaker.* : All permissions in one.
@@ -38,6 +42,7 @@ This complex plugin lets you create some databases, in game GUI, and use the Buk
 * databasemaker.<database>.remove : Remove an item
 * databasemaker.<database>.load : Load the database
 * databasemaker.<database>.unload : Unload the database
+* <database>.acces : Use the custom command
 
 
 ## Incoming updates : 
